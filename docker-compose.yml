@@ -1,0 +1,39 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: documindai-api
+
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      APP_NAME: DocuMindAI
+      APP_VERSION: 0.1.0
+
+      EMBEDDING_MODEL: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+      EMBEDDING_BATCH_SIZE: 32
+
+      OLLAMA_URL: http://host.docker.internal:11434
+      OLLAMA_MODEL: qwen2.5:3b
+
+      CHAT_RETRIEVAL_LIMIT: 5
+      CHAT_MIN_SIMILARITY: 0.25
+
+      UPLOAD_DIR: /app/data/uploads
+      VECTOR_STORE_DIR: /app/data/vector_store
+      VECTOR_COLLECTION_NAME: document_chunks
+
+      MAX_FILE_SIZE_MB: 50
+
+    volumes:
+      - ./data/uploads:/app/data/uploads
+      - ./data/vector_store:/app/data/vector_store
+      - ./logs:/app/logs
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
