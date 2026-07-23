@@ -1,4 +1,9 @@
 $readme = @'
+<p align="center">
+  <img src="assets/banner.png" alt="DocuMindAI Banner" width="100%">
+</p>
+
+<br>
 # DocuMindAI
 
 <p align="center">
