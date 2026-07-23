@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environments
+# Virtual Environment
 .venv/
 venv/
 
@@ -11,9 +11,17 @@ venv/
 .vscode/
 .idea/
 
-# OS
-.DS_Store
-Thumbs.db
+# Logs
+*.log
+
+# Environment
+.env
+
+# Database
+*.sqlite3
+
+# ChromaDB
+chroma_db/
 
 # Testing
 .pytest_cache/
@@ -24,25 +32,8 @@ Thumbs.db
 .coverage
 htmlcov/
 
-# Build
-build/
-dist/
-*.egg-info/
+# macOS
+.DS_Store
 
-# Environment
-.env
-
-# Uploaded documents
-uploads/
-
-# Chroma database
-chroma_data/
-
-# Logs
-*.log
-
-# SQLite
-*.sqlite3
-
-# Temporary
-*.tmp
+# Windows
+Thumbs.db
