@@ -5,24 +5,6 @@
 # DocuMindAI
 
 <p align="center">
-  <a href="https://github.com/thragg121/DocuMindAI/actions/workflows/ci.yml">
-    <img src="https://github.com/thragg121/DocuMindAI/actions/workflows/ci.yml/badge.svg" alt="CI">
-  </a>
-
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white" alt="Python">
-
-  <img src="https://img.shields.io/badge/FastAPI-0.116-009688?logo=fastapi&logoColor=white" alt="FastAPI">
-
-  <img src="https://img.shields.io/badge/Ollama-Local%20LLM-000000" alt="Ollama">
-
-  <img src="https://img.shields.io/badge/ChromaDB-Vector%20Database-orange" alt="ChromaDB">
-
-  <img src="https://img.shields.io/badge/Docker-Ready-2496ED?logo=docker&logoColor=white" alt="Docker">
-
-  <img src="https://img.shields.io/badge/License-MIT-success" alt="License">
-</p>
-
-<p align="center">
   <strong>Production-ready Retrieval-Augmented Generation API for document intelligence.</strong>
 </p>
 
