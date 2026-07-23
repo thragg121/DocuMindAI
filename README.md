@@ -426,11 +426,3 @@ https://github.com/thragg121/DocuMindAI
 
 GitHub: [@thragg121](https://github.com/thragg121)
 
-'@
-
-Set-Content `
-    -Path README.md `
-    -Value $readme `
-    -Encoding UTF8
-
-Write-Host "README.md created successfully." -ForegroundColor Green
